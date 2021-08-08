@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+    .carousel-inner > .item > img {
+      margin: auto;
+      padding: auto;
+      height: auto;
+    }
+@font-face {
+      font-family: mine;
+      src: url('RemachineScript_Personal_Use.ttf');
+    }
+    .footer1 {
+      background: black;
+      position: absolute;
+      text-align: center;
+      padding: 10px;
+      /* border-radius: 5px;*/
+      left: 0;
+      right: 0;
+    }
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      /*padding: 10px;*/
+      font-size: 16px;
+      text-decoration: underline;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    /*.dropbtn:hover, .dropbtn:focus {
+      background-color: #2980B9;
+    }*/
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      overflow-x: scroll;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      overflow-x: scroll;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd
+    }
+    .show {
+      display: block;
+    }
+    .group {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .b1 {
+      /*justify-content: center;
+      align-items: center;*/
+      height: 50px;
+      width: 400px;
+      background: lightgreen;
+      border: none;
+      border-radius: 25px;
+    }
+    .b1:hover {
+      transform: scale(1.02);
+      background: #1fde1fff;
+    }
+@media screen and (max-width:900px) {
+      .b1 {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav1">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="font-family: mine;" onclick="location.reload()">ResturantOne</a>
+      </div>
+      <div class="collapse navbar-collapse" id="nav1">
+        <ul class="nav navbar-nav">
+          <li><a>Home</a></li>
+          <li><a>Make Order</a></li>
+          <li class="active"><a>About us</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a><span class="glyphicon glyphicon-star-empty"></span>Rate</a></li>
+          <li><a><span class="glyphicon glyphicon-search"></span>Search</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <h1 style="font-family: mine;">ResturantOne</h1>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="1.jpg" width="450" height="300">
+        </div>
+        <div class="item">
+          <img src="2.jpg" width="450" height="500">
+        </div>
+        <div class="item">
+          <img src="3.jpg" width="450" height="300">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+    <hr>
+    <blockquote>
+      <h3>Our Food is healthy and clean.</h3>
+      <footer>
+        We make sure your heath stay good.
+      </footer>
+    </blockquote>
+    <blockquote class="blockquote-reverse">
+      <h3>Check out what we got this friady.</h3>
+      <footer>
+        Learn <a data-toggle="tooltip" data-placement="top" title="Blackfriday discount.">more</a>.
+      </footer>
+    </blockquote>
+    <blockquote>
+      <h3>We can reach you everywhere.</h3>
+      <footer>
+        Find out <a>where</a> we are.
+      </footer>
+    </blockquote>
+    <hr>
+    <div class="panel-group">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#test">Who we are ?</a>
+          </h4>
+        </div>
+        <div id="test" class="panel-collapse collapse">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi unde possimus quas beatae quidem laudantium neque numquam cupiditate minus, quae.
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#test1">Terms of use.</a>
+          </h4>
+        </div>
+        <div id="test1" class="panel-collapse collapse">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi officiis, non dolorum ipsa omnis impedit saepe, necessitatibus similique asperiores dolorem culpa quaerat eius obcaecati cumque quas inventore voluptatum magnam perferendis, tempore nostrum. Blanditiis, tempora maiores nulla, repellendus voluptatibus autem!
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="group">
+      <button class="b1">What's new</button>
+      <button class="b1">Make order</button>
+    </div>
+    <hr>
+    <footer class="footer1">
+      <p style="font-family: mine; color:white; font-size:25px;">
+        ResturantOne
+      </p>
+      <font color="white">if you have some comments or suggestions please leave it in the rate section , you can find it above.
+        <div class="dropdown">
+          Or try to<button onclick="myFunction()" class="dropbtn">Contact us.</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a>Email</a>
+            <a>Twitter</a>
+          </div>
+        </div>
+        <br>Many thanks.</font>
+      <hr>
+      <font color="gray">All Right Reserved &reg; 2019-2020</font>
+    </footer>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    var btn = document.getElementsByClassName("dropbtn")[0];
+    window.onclick = function(event) {
+      if (event.target != btn) {
+        document.getElementById("myDropdown").classList.remove('show');
+      }
+    }
+  </script>
+</body>
+</html>
